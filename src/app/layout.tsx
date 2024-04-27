@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Space_Mono } from "next/font/google";
 import { Fraunces } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./components/Sidebar";
 
 
 const space = Space_Mono({ weight: "400", subsets: ["latin"] });
@@ -17,9 +18,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+ 
+
   return (
     <html lang="en">
-      <body className={space.className}>{children}</body>
+      <body className={space.className}>
+        <div className="flex bg-beige">
+          <Sidebar />
+          <main className="layout__main-content p-12 min-h-screen">{children}</main>;
+        </div>
+      </body>
     </html>
   );
 }
+function useState(arg0: boolean): [any, any] {
+  throw new Error("Function not implemented.");
+}
+

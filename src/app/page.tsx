@@ -1,16 +1,17 @@
+"use client"
 import Image from "next/image";
+import { useState } from "react";
+import React from "react";
 import Link from "next/link";
 
 export default function Home() {
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white">
-      <div className="flex color-black">
-        <Link href="/resume-scanner">hello</Link>
-      <i className="bi bi-arrow-right-circle-fill color-black icon-105"></i>
-      <div className="grid bg-pink border-2 border-black">
-        <h1>akjsgdfoaiusdg</h1>
-      </div>
-      </div>
-    </main>
+      <main className="grid">        
+        <div className="flex items-start w-full h-fit bg-white border-4 border-black rounded-box box-shadow items-center justify-end">
+          <input type="text" value="Ask B0b Anything" className="m-4 w-11/12"></input>
+          <Link href="/chatbot"><i className="bi bi-chat-dots icon-105 m-4"></i></Link>
+        </div>
+      </main>
   );
 }

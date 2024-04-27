@@ -3,11 +3,11 @@ import Image from "next/image";
 import FileUpload from './file-upload';
 import { useState } from "react";
 import React from "react";
-import useDropdown from "./dropdown";
 import Link from "next/link";
 
 function ResumeInsights() {
-  const { wrapperRef, setOpen, setClose, getDropdown } = useDropdown('tagMenuDrop');
+  var insights = "wow such cool insights!";
+  var keywords = "these are the keywords that match :)";
 
   return(
     <div className="grid">
@@ -18,16 +18,24 @@ function ResumeInsights() {
         </div>
       </div>
 
-      <div className="toggle" onClick={() => setOpen()}>
-        {/* <HiOutlineDotsHorizontal /> */}
-      </div>
-      {getDropdown(
-        <div ref={wrapperRef} className="tagMenuDropdown">
-          <Link href="/">
-              hello
-            </Link>
+      <div className="flex items-center justify-center w-full h-fit bg-white border-4 border-black rounded-box my-8 box-shadow">
+        <div className="my-4">
+          <span className="font-heading text-center px-20 text-xl">	&#60; Software Engineer &#62;</span>
         </div>
-      )}
+        <i className="bi bi-caret-down-square-fill h1"></i>
+      </div>
+      
+      <div className="flex items-center justify-center w-full h-fit bg-white border-4 border-black rounded-box my-8 box-shadow">
+        <div className="my-4">
+          <span className="font-heading text-center px-8 text-xl">{insights}</span>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-center w-full h-fit bg-white border-4 border-black rounded-box my-8 box-shadow">
+        <div className="my-4">
+          <span className="font-heading text-center px-8 text-xl">{keywords}</span>
+        </div>
+      </div>
     </div>);
 }
 
@@ -52,10 +60,6 @@ export default function ResumeScanner() {
   let Component = showText === true ? ResumeInsights : ResumeUploadNeeded;
 
   return (
-    <div className="grid p-12 bg-beige">
-      <div className="w-full">
-        <i className="bi bi-arrow-right-circle-fill color-black icon-105"></i>
-      </div>
       <div className="flex">
         <aside className="hidden lg:h-5/6 sticky px-5 lg:grid lg:w-6/12 w-full">
           <div className="w-full min-h-96 h-fit bg-orange border-4 border-black rounded-box py-3">
@@ -82,10 +86,8 @@ export default function ResumeScanner() {
                 </button>
               </div>
             </div>
-            <button id="fileUpload" className="bg-yellow border-2 border-black rounded-md hover:bg-orange" onClick={handleNextClick}>Upload</button>
           </div>
         </main>
       </div>
-    </div>
   );
 }
