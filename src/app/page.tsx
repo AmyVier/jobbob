@@ -1,10 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
+<<<<<<< HEAD
     <main className="flex min-h-screen flex-col items-left justify-between p-24 bg-beige w-100%">
       <div className="flex color-black w-100%">
       
+=======
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white">
+      <div className="flex color-black">
+        <Link href="/resume-scanner">hello</Link>
+>>>>>>> 56430d932ffcfb35ccba8c71faf3393ad3d36123
       <i className="bi bi-arrow-right-circle-fill color-black icon-105"></i>
       
       <i className="bi bi-arrow-90deg-right relative top-0 left-0"></i>

@@ -16,6 +16,10 @@ const config: Config = {
         "seafoam": "#B2D7C0",
         "teal": "#006866",
       },
+      fontFamily: {
+        sans: ['Space_Mono', 'sans-serif'],
+        normal: ['Fraunces', 'normal'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
