@@ -1,5 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 
-.icon-105 { font-size: 66px; }
+.icon-105 { font-size: 50px; }
+.rounded-box { border-radius: 32px;}
+.box-shadow { box-shadow: 10px 10px 0 0 #000; }
+.font-heading { font-family: 'Fraunces';}
+
+.dropdown {
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid darken(white, 10%);
+  background-color: white;
+  box-shadow: 0 2px 5px darken(white, 10%);
+
+  &.close {
+    display: none;
+  }
+}
