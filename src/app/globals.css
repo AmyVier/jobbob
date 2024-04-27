@@ -1,33 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+.icon-105 { font-size: 50px; }
+.rounded-box { border-radius: 32px;}
+.box-shadow { box-shadow: 10px 10px 0 0 #000; }
+.font-heading { font-family: 'Fraunces';}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+.dropdown {
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid darken(white, 10%);
+  background-color: white;
+  box-shadow: 0 2px 5px darken(white, 10%);
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  &.close {
+    display: none;
   }
 }
