@@ -9,7 +9,7 @@ export default function ResumeScanner() {
   return (
       <main className="grid">        
         <div className="grid items-start w-full h-fit bg-seafoam border-4 border-black rounded-box">
-          <input className="font-heading p-4 text-3xl">Search Courses</input>
+          <input type="text" placeholder="Search Courses" className="font-heading p-4 text-3xl"/>
         </div>
       </main>
   );
