@@ -1,11 +1,12 @@
-"use client"
+//"use client"
 import Image from "next/image";
 import { useState } from "react";
 import React from "react";
 import Link from "next/link";
+import { api } from "~/app/trpc/server";
+
 
 export default function Home() {
-  
   return (
       <main className="grid">        
         <div className="flex items-start w-full h-fit bg-white border-4 border-black rounded-box box-shadow items-center justify-end">
