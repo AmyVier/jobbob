@@ -1,3 +1,4 @@
+
 import { items } from "/public/opp.json";
 import Carousel from "react-elastic-carousel";
 import styles from "./embla.css";

@@ -7,22 +7,22 @@ import { useState } from 'react';
 import FilePondPluginPdfPreview from 'filepond-plugin-pdf-preview';
 import "filepond-plugin-pdf-preview/dist/filepond-plugin-pdf-preview.min.css";
 
+
+registerPlugin(FilePondPluginPdfPreview);
+
 export default function FileUpload() {
 
-    registerPlugin(FilePondPluginPdfPreview);
-    const pond = create();
-    pond.setOptions({
-      server: {
-        process: '/api/upload',
-        fetch: null,
-        revert: null,
-      },
-      allowPdfPreview: true, 
-      pdfPreviewHeight: 1280,
-      pdfComponentExtraParams: 'toolbar=0&view=fit&page=1'            
-    });
+  const [files, setFiles] = useState([]);
+
 
   return (
-    <FilePond/>
+    <FilePond
+      files={files}
+                onupdatefiles={setFiles}
+                allowMultiple={false}
+                server="/api/upload"
+                name="files"
+
+    />
   );
 }
