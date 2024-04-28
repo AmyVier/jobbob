@@ -6,7 +6,7 @@
 .icon-105 { font-size: 50px; }
 .rounded-box { border-radius: 32px;}
 .box-shadow { box-shadow: 10px 10px 0 0 #000; }
-.font-heading { font-family: 'Fraunces';}
+.font-heading { font-family: 'Fraunces, serif'; font-weight: 700;}
 
 .layout {
   display: flex;
