@@ -4,7 +4,7 @@ const nextConfig = {
     serverComponentsExternalPackages: ['pdf2json'],
   },
   images: {
-    domains: ['i.pinimg.com'],
+    domains: ['i.pinimg.com', "img.evbuc.com", "images.lumacdn.com"],
   },
 };
 

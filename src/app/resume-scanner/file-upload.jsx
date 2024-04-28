@@ -18,11 +18,13 @@ export default function FileUpload() {
   return (
     <FilePond
       files={files}
-                onupdatefiles={setFiles}
-                allowMultiple={false}
-                server="/api/upload"
-                name="files"
-
+      onupdatefiles={setFiles}
+      allowMultiple={false}
+      server="/api/upload"
+      name="files"
+      allowPdfPreview={true}
+      pdfPreviewHeight={1280}
+      pdfComponentExtraParams='toolbar=0&view=fit&page=1'
     />
   );
 }

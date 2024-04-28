@@ -3,7 +3,6 @@ import Image from "next/image";
 import FileUpload from './file-upload';
 import { useState } from "react";
 import React from "react";
-import Link from "next/link";
 
 function ResumeInsights() {
   var insights = "wow such cool insights!";
@@ -54,7 +53,9 @@ export default function ResumeScanner() {
   const [showText, setShowText] = useState(false);
 
   function handleNextClick() {
+    console.log(showText)
     setShowText(true);
+    Component = ResumeInsights;
   }
 
   let Component = showText === true ? ResumeInsights : ResumeUploadNeeded;
@@ -72,7 +73,7 @@ export default function ResumeScanner() {
             </div>
           </div>
         </aside>
-        <main className="flex min-h-screen flex-col items-center lg:w-6/12 w-full">
+        <div className="flex min-h-screen flex-col items-center lg:w-6/12 w-full">
           <Component />
 
           {/* Resume Preview */}
@@ -87,7 +88,7 @@ export default function ResumeScanner() {
               </div>
             </div>
           </div>
-        </main>
+        </div>
       </div>
   );
 }

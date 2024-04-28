@@ -1,5 +1,5 @@
 
-import { items } from "/public/opp.json";
+import opp from "/public/opp.json";
 import Carousel from "react-elastic-carousel";
 import styles from "./embla.css";
 const breakPoints = [
@@ -9,7 +9,7 @@ const breakPoints = [
   { width: 1200, itemsToShow: 3 }
 ];
 export default function ElasticCarousel() {
-  const {elastic} = items;
+  const {elastic} = opp.items;
   return (
       <div className={styles.contWrapper}>
         <Carousel breakPoints={breakPoints}>

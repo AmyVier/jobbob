@@ -1,7 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import { Space_Mono } from "next/font/google";
-import { Fraunces } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
 

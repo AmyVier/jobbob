@@ -4,7 +4,7 @@ import { useState } from "react";
 import React from "react";
 import Link from "next/link";
 
-export default function ResumeScanner() {
+export default function Courses() {
   const keywords = ["JavaScript",
                     "CSS",
                     "React"]
@@ -13,11 +13,10 @@ export default function ResumeScanner() {
     <div className="grid">
       <div className="flex w-full h-fit bg-white border-4 border-black rounded-box items-center justify-end">
         <input type="text" className="mx-4 w-11/12 h-10 rounded-md"></input>
-        <Link href="/chatbot"><i className="bi bi-search icon-105 mx-4"></i></Link>
-
+        <i className="bi bi-search icon-105 mx-4"></i>
       </div>
 
-      <span className="text-xl font-heading my-4">Keywords to Learn</span>
+      <span className="text-xl font-heading mt-8">Keywords to Learn</span>
       <hr />
       <div className="flex py-4">
       {keywords.map((item) => (
@@ -27,7 +26,7 @@ export default function ResumeScanner() {
           ))}
       </div>
 
-      <span className="text-5xl font-heading my-4">Popular Courses</span>
+      <span className="text-5xl font-heading my-4 mt-8">Popular Courses</span>
       <hr />
       <div className="flex justify-between p-4 gap-10">
         <div className="w-full min-h-fit h-full px-4 bg-white border-4 border-black rounded-box box-shadow justify-between">
@@ -53,7 +52,7 @@ export default function ResumeScanner() {
       </div>
 
 
-      <span className="text-5xl font-heading my-4">All Courses</span>
+      <span className="text-5xl font-heading my-4 mt-8">All Courses</span>
       <hr />
       <div className="grid grid-cols-3 justify-between p-4 gap-10">
         <div className="w-full min-h-fit h-full px-4 bg-white border-4 border-black rounded-box box-shadow justify-between">

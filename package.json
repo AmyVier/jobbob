@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.6",
     "@prisma/client": "^5.13.0",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@tanstack/react-query": "^5.32.0",
@@ -16,6 +17,7 @@
     "@trpc/next": "^11.0.0-rc.354",
     "@trpc/react-query": "^11.0.0-rc.354",
     "@trpc/server": "^11.0.0-rc.354",
+    "@types/google.maps": "^3.55.7",
     "@types/react-filepond": "^7.1.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
@@ -24,14 +26,17 @@
     "filepond": "^4.31.1",
     "filepond-plugin-image-preview": "^4.6.12",
     "filepond-plugin-pdf-preview": "^1.0.2",
+    "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
     "next": "14.2.3",
     "pdf2json": "^3.0.5",
     "prisma": "^5.13.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-elastic-carousel": "^0.11.5",
     "react-filepond": "^7.1.2",
     "react-icons": "^5.1.0",
+    "react-leaflet": "^4.2.1",
     "react-pdf": "^7.7.1",
     "styled-components": "^6.1.8",
     "superjson": "^2.2.1",
@@ -40,6 +45,7 @@
     "zod": "^3.23.4"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

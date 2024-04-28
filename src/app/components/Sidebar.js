@@ -36,11 +36,11 @@ const sidebarItems = [
     href: "/chatbot",
     icon: FaWalkieTalkie,
   },
-  {
-    name: "Profile",
-    href: "/profile",
-    icon: IoPersonCircle,
-  },
+  // {
+  //   name: "Profile",
+  //   href: "/profile",
+  //   icon: IoPersonCircle,
+  // },
 ];
 
 function Sidebar() {

@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
 
 .icon-105 { font-size: 50px; }
 .rounded-box { border-radius: 32px;}
