@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={space.className}>
         <div className="flex bg-beige">
           <Sidebar />
-          <main className="layout__main-content p-12 min-h-screen">{children}</main>;
+          <main className="layout__main-content p-12 min-h-screen">{children}</main>
         </div>
       </body>
     </html>

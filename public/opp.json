@@ -1,0 +1,31 @@
+{
+  "items": {
+    "elastic": [
+      {
+        "id": 1,
+        "title": "Photoshoots",
+        "imageUrl": "https://i.pinimg.com/564x/02/22/ab/0222abd84a75361a9401ba7dbf1513b6.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Adventure",
+        "imageUrl": "https://i.pinimg.com/564x/0c/b4/e9/0cb4e9bf108eeecafddf20b4283bcbef.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Events",
+        "imageUrl": "https://i.pinimg.com/564x/2e/69/bb/2e69bb97e746ea70140f762c5a171825.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Discovery",
+        "imageUrl": "https://i.pinimg.com/564x/a4/42/68/a44268c06a13b7bf7cda1f69de1d937b.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Sports",
+        "imageUrl": "https://i.pinimg.com/564x/90/1d/1b/901d1b55ad4aaef12b2e5a3b06b945e7.jpg"
+      }
+    ]
+  }
+}

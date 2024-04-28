@@ -1,10 +1,10 @@
 'use client'
 import Image from "next/image";
-import { AiOutlineHome } from "react-icons/ai";
-import { BsPeople } from "react-icons/bs";
-import { TiContacts } from "react-icons/ti";
-import { FiMail } from "react-icons/fi";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
+import { MdDocumentScanner } from "react-icons/md";
+import { FaPeopleGroup, FaWalkieTalkie } from "react-icons/fa6";
+import { IoIosSchool } from "react-icons/io";
+import { IoPersonCircle } from "react-icons/io5";
 import Link from "next/link";
 import { useContext } from "react";
 import { SidebarContext } from "../context/SidebarContext";
@@ -14,32 +14,32 @@ const sidebarItems = [
   {
     name: "Home",
     href: "/",
-    icon: AiOutlineHome,
+    icon: FaHome,
   },
   {
     name: "Resume Scanner",
     href: "/resume-scanner",
-    icon: BsPeople,
+    icon: MdDocumentScanner,
   },
   {
     name: "Opportunities",
     href: "/opportunities",
-    icon: FiMail,
+    icon: FaPeopleGroup,
   },
   {
     name: "Courses",
     href: "/courses",
-    icon: TiContacts,
+    icon: IoIosSchool,
   },
   {
     name: "Talk to B0b",
     href: "/chatbot",
-    icon: TiContacts,
+    icon: FaWalkieTalkie,
   },
   {
     name: "Profile",
     href: "/profile",
-    icon: TiContacts,
+    icon: IoPersonCircle,
   },
 ];
 
@@ -49,9 +49,6 @@ function Sidebar() {
 
   return (
     <div className="sidebar__wrapper">
-      <button className="btn" onClick={toggleSidebarCollapse}>
-        {isCollapsed ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
-      </button>
       <aside className="sidebar bg-white" data-collapse={isCollapsed}>
         <div className="sidebar__top">
           <Image
