@@ -11,6 +11,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 type PropType = {
   slides: number[]
   options?: EmblaOptionsType
+
 }
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
